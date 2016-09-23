@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>I come from template!!</title>
+<style>
+body {
+	background-color: lightyellow;
+}
+
+em {
+	color: LightSeaGreen;
+}
+</style>
+<script type="text/javascript">
+  var onloadCallback = function() {
+	  grecaptcha.render('html_element', {
+          'sitekey' : '6LdpAwcUAAAAAHtMgr9SpKmhqoWqnk60DEyIXyYd'
+        });
+  };
+</script>
+
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+</script>
+
+
+    
+</head>
+<body>
+	<h1>Hello Google reCAPTCHA!</h1>
+	<hr/>
+	<h2>Explicit rendering after an onload callback.</h2>
+	<hr/>
+	<form action="?" method="POST">
+		<div id="html_element"></div>
+		<br /> <input type="submit" value="Submit">
+	</form>
+	<em>{{ current_time }}</em>
+</body>
+</html>

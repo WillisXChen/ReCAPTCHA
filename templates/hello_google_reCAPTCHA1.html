@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>I come from template!!</title>
+<style>
+body {
+	background-color: lightyellow;
+}
+
+em {
+	color: LightSeaGreen;
+}
+</style>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
+</head>
+<body>
+	<h1>Hello Google reCAPTCHA!</h1>
+	<hr/>
+	<h2>Automatically render the reCAPTCHA widget.</h2>
+	<hr/>
+	
+	<form action="?" method="POST">
+		<div class="g-recaptcha" data-sitekey="6LdpAwcUAAAAAHtMgr9SpKmhqoWqnk60DEyIXyYd"></div>
+		<br /> <input type="submit" value="Submit">
+	</form>
+	<em>{{ current_time }}</em>
+</body>
+</html>
